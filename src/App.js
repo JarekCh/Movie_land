@@ -20,6 +20,7 @@ const movieOne = {
 
 const App = () => {
     const [movies, setMovies] = useState([]);
+    const [searchTerm, setsearchTerm] = useState('');
 
     
     const searchMovies = async (title) => {
@@ -40,13 +41,13 @@ const App = () => {
             <div className="search">
                 <input
                     placeholder="Search for movies"
-                    value="Superman"
-                    onChange={() => {}}
+                    value={searchTerm}
+                    onChange={(e) => setsearchTerm(e.target.value)}
                 />
                 <img 
                 src={SearchIcon}
                 alt = "search"
-                onClick={() => {}}
+                onClick={() => searchMovies(searchTerm)}
                 />
             </div>
 
