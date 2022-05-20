@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Movie Land 
+
+App to serch movie from OMDb api.
+
+## Technologies Trained
+- React
+    - Hooks
+    - API (fetch)
+- Js
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
