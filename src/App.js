@@ -6,17 +6,7 @@ import "./App.css";
 import SearchIcon from './search.svg';
 
 
-const API_URL = 'http://omdbapi.com//?apikey=4d8a6219'
-
-const movieOne = {
-    "Title": "Batman Begins",
-    "Year": "2005",
-    "imdbID": "tt0372784",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-};
-
-
+const API_URL = 'http://omdbapi.com//?apikey=4d8a6219';
 
 const App = () => {
     const [movies, setMovies] = useState([]);
@@ -32,7 +22,7 @@ const App = () => {
    
 
     useEffect(() => {
-        searchMovies("Superman");
+        searchMovies("");
       }, []);
 
     return (
